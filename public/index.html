@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  		<title>ARIA CA2 EXAM!</title>
+ 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ 		<script src="javascripts/jquery-1.10.2.min.js"></script>
+ 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="javascripts/script.js"></script>
+		<script src="javascripts/main.js"></script>
+		<script src="javascripts/converter.js"></script>
+		<script src="javascripts/skel.min.js"></script>
+		<script src="javascripts/alertify.min.js"></script>
+       	<script src="javascripts/fruitmachine.js"></script>
+  </head>
+  <body>
+      <div class="container">
+			<!-- HEADER -->
+				<div id="header" class="row">
+					<div class="6u">	
+						<br />				    
+						<h1>ARIA CA2 EXAM!</h1>
+						<h2>Sandra McCormack --- x12110639</h2>
+						<hr />
+						<p>Testing the calculator with Jasmine: <a href="test/spec/SpecRunner.html">click here</a></p>
+						<br />	
+					</div>
+				</div>		
+			<!-- END HEADER -->	
+				
+			<!-- CALCULATOR  -->
+				<section id="hero">
+					<h1>&hearts; CALCULATOR! &hearts;</h1>
+					<br />
+					<p>Please input a number</p>
+					<p>
+						<input type="number" id="firstnumber"/>
+					</p>				
+					<p>Please input another number</p>	
+					<p>
+						<input type="number" id="secondnumber"/>
+					</p>
+				
+					<p id="result">Result will show here</p>
+				 
+					<p>
+						<button class="button" id="add" type="button">+</button>
+						<button class="button" id="minus" type="button">-</button>
+						<button class="button" id="mul" type="button">*</button>
+						<button class="button" id="divide" type="button">/</button>
+						<button class="button" id="clearinput" type="button">C</button>
+					</p>
+			<!-- END CALCULATOR  -->	
+					<br />
+					<hr />
+					<br />
+					
+			<!-- CONVERTER  -->
+					<h1>&hearts; CONVERTER! &hearts;</h1>
+					<br />
+					<p>Insert a number into either of the input fields below:</p>
+					<p>
+						<input id="c" onkeyup="convert('C')"> degrees Celsius
+					</p>
+					<p>equals</p>
+					<p>
+						<input id="f" onkeyup="convert('F')"> degrees Fahrenheit
+					</p>
+					
+			<!-- END CONVERTER  -->
+			        <br />
+			        <hr />
+					<br />
+					
+			<!-- FRUIT MACHINE  -->
+					<h1>&hearts; ROULETTE! &hearts;</h1>
+					<br />
+							<div id="mastHead">
+							</div>
+		 						<div id="hiddenHead">	
+		 							<h1 class="fancy_title">Try the roulette</h1>
+		 							<h3 class="fancy_title">Win a prize</h3>
+		 						</div>
+							<div id="holster">
+								<div id="rollers">
+									<div id="rollerBack">
+										<img class="fruitmachine-img" id="roller1" alt="A fruit machine tumbler" src="images/1.jpg" />
+										<img class="fruitmachine-img" id="roller2" alt="A fruit machine tumbler" src="images/1.jpg" />
+										<img class="fruitmachine-img" id="roller3" alt="A fruit machine tumbler" src="images/1.jpg" />
+									</div>
+								</div>
+						
+							<div id="lever">
+								<img class="lever" id="leverpic" alt="Fruit machine lever" src="images/lever1.jpg" onclick="startgame(this);"/>
+							</div>	
+							</div>
+			
+			<!-- END FRUIT MACHINE  -->			
+				</section>	
+									
+				
+			<!-- FOOTER -->
+				<div id="footer">
+					<br />
+                	<p>this is the footer!</p>
+                	<br />
+				</div>
+			<!-- END FOOTER -->
+			
+		</div>		
+	
+  </body>
+</html>
